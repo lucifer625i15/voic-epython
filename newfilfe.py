@@ -1,6 +1,5 @@
-# from urllib.parse import quote_from_bytes
-from translate import Translator #used to translate one language to another
-import pyttsx3 #used to use voice api
+from translate import Translator
+import pyttsx3
 import wolframalpha
 import os
 import subprocess
@@ -83,73 +82,6 @@ if __name__ == "__main__":
 
         elif 'open TikTok' in query:
             webbrowser.open("tiktok.com")
-
-        elif 'open facebook page of bic hakathon' in query:
-            webbrowser.open("facebook.com/BIC.Hackathon/")
-
-        elif 'open bostenn international college web page' in query:
-            webbrowser.open("bostoncollege.edu.np")
-
-        elif 'open todays hackathon sponsers' in query:
-            r=input('''Input sponsers name in number to redirect to their pages : 
-            1.world link
-            2.Heartsun
-            3.LUXURY Light
-            4.insurance partner
-            5.Intelzy
-            6.Lake Twenty Thousand
-            7.Tech Himalaya
-            8.Biryani Moments
-            9.Our closet chitwan
-            10.Bite Doner
-            11.WEBSOFT NEPAL
-            12.Genese Cloud Academy
-            13.Time Pharmaceuticals
-            14.Rose Garden Party Palace & Restaurant
-            15.Sauraha online
-            16.Naya Patrika
-            17.Kalika FM0
-            ''')
-            if r==1:
-                webbrowser.open("worldlink.com.np")
-            elif r==2:
-                webbrowser.open("heartsun.com.np")
-            elif r==3:
-                webbrowser.open("luxurylightingny.com")
-            elif r==4:
-                webbrowser.open("premier-insurance.com.np")
-            elif r==5:
-                webbrowser.open("intelzy.co")
-            elif r==6:
-                webbrowser.open("tripadvisor.com")
-            elif r==7:
-                webbrowser.open("techhimalaya.com")
-            elif r==8:
-                webbrowser.open("biryanimoments.com")
-            elif r==9:
-                webbrowser.open("facebook.com/ourclosetchitwan")
-            elif r==10:
-                webbrowser.open("bitedoner.com")
-            elif r==11:
-                webbrowser.open("websoftnepal.com")
-            elif r==12:
-                webbrowser.open("genesecloud.academy")
-            elif r==13:
-                webbrowser.open("timepharma.com")
-            elif r==914:
-                webbrowser.open("facebook.com/rosegardenevents")
-            elif r==15:
-                webbrowser.open("saurahaonline.com")
-            elif r==16:
-                webbrowser.open("nayapatrikadaily.com")
-            elif r==17:
-                webbrowser.open("www.kalikanews.com")
-            else:
-                webbrowser.open("bostoncollege.edu.np")
-            
-
-            
-            
             
         elif 'open Instagram' in query:
             webbrowser.open("instagram.com")
@@ -241,14 +173,7 @@ if __name__ == "__main__":
         elif 'would you like to chat with me' in query:
             speak("yeah why not but this features is only available in typing mode")
             demo()
-
-        elif 'BIC Hackathon' in query:
-            speak("BIC Hackathon is a 48 Hour event organized by Boston Center for IT in collaboration with Boston International College. In this event, Teams collaborate to develop a proposal, build a prototype, and pitch ideas and the best three teams will be rewarded.")
-
-        elif 'hackathon' in query:
-            speak("""A hackathon also known as a hack day hackfest datathon or codefest a portmanteau of hacking marathon is a design sprint-like event often in which computer programmers and others involved in software development including graphic designers interface designers project managers domain experts and others collaborate intensively on software projects.
-                    The goal of a hackathon is to create functioning software or hardware by the end of the event.Hackathons tend to have a specific focus which can include the programming language used the operating system an application an API or the subject and the demographic group of the programmers. In other cases there is no restriction on the type of software being created.""")
-
+		
         elif 'how are you' in query:
             speak("I am fine, Thank you")
             speak("How are you, Sir")
